@@ -1,9 +1,7 @@
 package com.roczniak;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.sql.SQLOutput;
+import java.util.EmptyStackException;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -24,39 +22,51 @@ public class BalancedBrackets {
                     brackets.push(letter);
                     break;
                 case '}':
-                    if (brackets.peek().equals('{')) {
-                        brackets.pop();
-                        isBalanced = true;
-                        break;
-                    } else {
+                    try {
+                        if (brackets.peek() != null && brackets.peek().equals('{')) {
+                            brackets.pop();
+                            isBalanced = true;
+                            break;
+                        } else {
+                            isBalanced = false;
+                            return "NO";
+                        }
+                    } catch (EmptyStackException exception) {
                         isBalanced = false;
                         return "NO";
                     }
                 case ')':
-                    if (brackets.peek().equals('(')) {
-                        brackets.pop();
-                        isBalanced = true;
-                        break;
-                    } else {
+                    try {
+                        if (brackets.peek() != null && brackets.peek().equals('(')) {
+                            brackets.pop();
+                            isBalanced = true;
+                            break;
+                        } else {
+                            isBalanced = false;
+                            return "NO";
+                        }
+                    } catch (EmptyStackException exception) {
                         isBalanced = false;
                         return "NO";
                     }
                 case ']':
-                    if (brackets.peek().equals('[')) {
-                        brackets.pop();
-                        isBalanced = true;
-                        break;
-                    } else {
+                    try {
+                        if (brackets.peek() != null && brackets.peek().equals('[')) {
+                            brackets.pop();
+                            isBalanced = true;
+                            break;
+                        } else {
+                            isBalanced = false;
+                            return "NO";
+                        }
+                    } catch (EmptyStackException exception) {
                         isBalanced = false;
                         return "NO";
                     }
-                default:
-                    isBalanced = true;
-                    break;
+
             }
         }
-
-        return "YES";
+        return brackets.empty() ? "YES" : "NO";
     }
 
     public static void main(String[] args) throws IOException {
