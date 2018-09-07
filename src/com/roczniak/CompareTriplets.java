@@ -7,25 +7,25 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Solution {
+public class CompareTriplets {
 
     // Complete the compareTriplets function below.
     static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
 //        List<Integer> result = new ArrayList<Integer>();
 //        result.add(0,0);
 //        result.add(1,0);
-        int[] result = {0,0};
-        for(int i = 0; i < a.size(); i++){
-            if(a.get(i) > b.get(i)){
+        int[] result = {0, 0};
+        for (int i = 0; i < a.size(); i++) {
+            if (a.get(i) > b.get(i)) {
                 result[0] += 1;
 //                result.add(0, result.get(0)+1);
-            }else if(b.get(i) > a.get(i)){
+            } else if (b.get(i) > a.get(i)) {
 //                result.add(1, result.get(1)+1);
                 result[1] += 1;
             }
         }
 //        return result.subList(0,2);
-         return Arrays.asList(result[0], result[1]);
+        return Arrays.asList(result[0], result[1]);
     }
 
     public static void main(String[] args) throws IOException {

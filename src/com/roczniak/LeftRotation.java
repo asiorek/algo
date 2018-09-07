@@ -29,8 +29,8 @@ public class LeftRotation {
 
         int[] result = new int[n];
 
-        for(int i = 0; i < n; i++){
-            result[i] = a[(d+i)%n];
+        for (int i = 0; i < n; i++) {
+            result[i] = a[(d + i) % n];
             System.out.print(String.valueOf(result[i]) + " ");
         }
     }

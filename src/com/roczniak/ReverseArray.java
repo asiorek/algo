@@ -3,7 +3,7 @@ package com.roczniak;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Solution2 {
+public class ReverseArray {
 
     // Complete the reverseArray function below.
     static int[] reverseArray(int[] a) {
