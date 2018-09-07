@@ -11,6 +11,7 @@ public class AppendAndDelete {
 
     // Complete the appendAndDelete function below.
     static String appendAndDelete(String s, String t, int k) {
+        //TODO
         boolean isPossible = false;
         int steps = 0;
         int deletionIndex = 0;
