@@ -1,4 +1,4 @@
-package com.roczniak;
+package com.roczniak.hackerrank;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

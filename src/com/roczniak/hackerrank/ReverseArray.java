@@ -1,4 +1,4 @@
-package com.roczniak;
+package com.roczniak.hackerrank;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -41,6 +41,11 @@ public class ReverseArray {
                 System.out.print(" ");
             }
         }
+
+        Integer a = 100001;
+        Integer b = 100001;
+
+        System.out.println(a.equals(b));
 
         System.out.print("\n");
 

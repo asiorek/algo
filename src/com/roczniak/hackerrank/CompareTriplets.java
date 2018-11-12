@@ -1,4 +1,4 @@
-package com.roczniak;
+package com.roczniak.hackerrank;
 
 import java.io.BufferedReader;
 import java.io.IOException;

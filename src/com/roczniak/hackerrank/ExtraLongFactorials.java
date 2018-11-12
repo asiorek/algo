@@ -1,4 +1,4 @@
-package com.roczniak;
+package com.roczniak.hackerrank;
 
 import java.math.BigInteger;
 import java.util.Scanner;
