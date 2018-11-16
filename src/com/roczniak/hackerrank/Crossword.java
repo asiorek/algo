@@ -11,6 +11,7 @@ public class Crossword {
 
     private static List<String> wordsToFill;
     private static Character[][] grid;
+    private static boolean f;
 
     // Complete the crosswordPuzzle function below.
     private static String[] crosswordPuzzle(String[] crossword, String words) {
@@ -38,7 +39,13 @@ public class Crossword {
 
     private static void check(int wordIndex) {
 
+        if (!f) {
+            return;
+        }
         if (wordIndex == wordsToFill.size()) {
+            if (f) {
+                f = false;
+            }
             return;
         }
         int i, j, p, q, k;

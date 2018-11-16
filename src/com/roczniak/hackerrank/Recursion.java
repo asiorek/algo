@@ -3,7 +3,7 @@ package com.roczniak.hackerrank;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecursionFromQualtrics {
+public class Recursion {
 
     private static char[] operators = new char[]{'+', '-', '*'};
     private static int resultToFind;
