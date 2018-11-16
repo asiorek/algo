@@ -1,4 +1,4 @@
-package com.roczniak.hackerrank;
+package com.roczniak.interviews;
 
 import java.util.ArrayList;
 import java.util.List;
